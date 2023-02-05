@@ -7,10 +7,10 @@ export default function Projects() {
             <div className="container 
                 mx-auto
                 min-h-screen
-                flex justify-around
+                flex justify-evenly
                 flex-col
                 items-center"> 
-                <p>you can find my projects on</p>
+                <p class="text-2xl">you can find all of my projects here</p>
                 
                 <a href="https://github.com/annasajkh">
                     <img src={githubLogo} width={100} height={100}></img>
@@ -20,8 +20,9 @@ export default function Projects() {
                     <img src={replitLogo} width={100} height={100}></img>
                 </a>
 
-                <a href="#home" className="rounded-lg
-                                        box-border h-12 w-16 p-3
+                <a href="#home"className="rounded-lg
+                                        box-border h-16 w-23 p-3
+                                        text-2xl
                                         hover:bg-gray-700
                                         hover:text-sky-300
                                         focus:bg-gray-700

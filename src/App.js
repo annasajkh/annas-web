@@ -14,7 +14,7 @@ function App() {
   blockScroll();
 
   return (
-    <div className="text-white bg-gray-900 body-font">
+    <div className="text-white bg-gradient-to-r from-slate-900 to-gray-800 body-font">
       <NavBar />
       <Home />
       <Projects />

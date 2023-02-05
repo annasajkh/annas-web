@@ -1,3 +1,6 @@
+import annasHug from "../images/hug.png";
+
+
 export default function Hug() {
     return (
         <section id="hug">
@@ -7,11 +10,14 @@ export default function Hug() {
                 flex justify-center
                 flex-col
                 items-center"> 
-            <p>awww do you want a hug?</p>
-            <p>alright *hug hug hug*</p>
+            
+            <img src={annasHug} width={300} height={300}></img>
+            <p class="text-2xl">awww do you want a hug?</p>
+            <p class="text-2xl">alright *hugs*</p>
             
             <a href="#home" className="rounded-lg
-                                        box-border h-12 w-16 p-3
+                                        box-border h-16 w-23 p-3
+                                        text-2xl
                                         hover:bg-gray-700
                                         hover:text-sky-300
                                         focus:bg-gray-700
