@@ -13,7 +13,7 @@ export default function Hug() {
             
             <img src={annasHug} width={300} height={300}></img>
             <p class="text-2xl">awww do you want a hug?</p>
-            <p class="text-2xl">alright *hugs*</p>
+            <p class="text-2xl mb-10">alright *hugs*</p>
             
             <a href="#home" className="rounded-lg
                                         box-border h-16 w-23 p-3
