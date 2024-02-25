@@ -10,6 +10,8 @@ import tumblrImg from "../assets/social_media/tumblr.jpg";
 import linktreeImg from "../assets/social_media/linktree.png";
 
 export default function Home() {
+    const socialMediaLinkStyle = "rounded-lg sm:mx-10 mx-5 scale-75 sm:scale-100";
+
     const [isMouseDown, setIsMouseDown] = useState(false);
 
     function onMouseEnter() {
@@ -29,25 +31,24 @@ export default function Home() {
 			</div>
 
 			<div className="mx-auto flex justify-center flex-row items-center bg-gradient-to-r from-slate-900 via-slate-800 to-gray-800 mt-2 py-2">
-
-				<a href="https://twitter.com/AnnasVirtual" target="_blank" className="sm:mx-10 mx-5">
-					<img src={twitterXImg} className="rounded-lg" width={48} height={48}></img>
+				<a href="https://twitter.com/AnnasVirtual" target="_blank" >
+					<img src={twitterXImg} width={48} height={48} className={socialMediaLinkStyle}></img>
 				</a>
 
-				<a href="https://www.youtube.com/channel/UCCUgLcJpWM0OOgxQCr32nYg" target="_blank" className="sm:mx-10 mx-5">
-					<img src={youtubeImg} className="rounded-lg" width={48} height={48}></img>
+				<a href="https://www.youtube.com/channel/UCCUgLcJpWM0OOgxQCr32nYg" target="_blank" className={socialMediaLinkStyle}>
+					<img src={youtubeImg} width={48} height={48}></img>
 				</a>
 
-				<a href="https://www.instagram.com/annasvirtual/?hl=en" target="_blank" className="sm:mx-10 mx-5">
-					<img src={instagramImg} className="rounded-lg" width={48} height={48}></img>
+				<a href="https://www.instagram.com/annasvirtual/?hl=en" target="_blank" className={socialMediaLinkStyle}>
+					<img src={instagramImg} width={48} height={48}></img>
 				</a>
 
-                <a href="https://www.tumblr.com/annasvirtual" target="_blank" className="sm:mx-10 mx-5">
-					<img src={tumblrImg} className="rounded-lg" width={48} height={48}></img>
+                <a href="https://www.tumblr.com/annasvirtual" target="_blank" className={socialMediaLinkStyle}>
+					<img src={tumblrImg} width={48} height={48}></img>
 				</a>
 
-                <a href="https://linktr.ee/AnnasVirtual" target="_blank" className="sm:mx-10 mx-5">
-					<img src={linktreeImg} className="rounded-lg" width={48} height={48}></img>
+                <a href="https://linktr.ee/AnnasVirtual" target="_blank" className={socialMediaLinkStyle}>
+					<img src={linktreeImg} width={48} height={48}></img>
 				</a>
                 
 			</div>
