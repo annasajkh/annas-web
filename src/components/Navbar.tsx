@@ -8,8 +8,8 @@ export default function Navbar() {
         <div className="text-white bg-gradient-to-r from-slate-900 via-slate-800 to-gray-800">
             <header className="h-20 flex items-center justify-evenly md:sticky">
                 <Link to="/" className={linkStyle}>Home</Link>
-                <Link to="/#/projects" className={linkStyle}>Projects</Link>
-                <Link to="/#/end" className={linkStyle}>End</Link>
+                <Link to="/projects" className={linkStyle}>Projects</Link>
+                <Link to="/end" className={linkStyle}>End</Link>
             </header>
         </div>
     )
