@@ -1,6 +1,6 @@
 import annasHappy from "../assets/annas/annas_happy.png";
 
-export default function End() {
+export default function Something() {
     const roundedAndStopScalingStyle = "rounded-lg min-w-8";
 
 	return (
