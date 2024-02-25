@@ -19,7 +19,7 @@ export default function Projects() {
 				</a>
 			</div>
 			
-			<p className="text-2xl font-mono flex justify-center items-center pt-24 mt-2">You can find all of my projects on github, itch.io, and replit</p>
+			<p className="text-2xl font-mono flex justify-center items-center text-center pt-24 mt-2">You can find all of my projects on github, itch.io, and replit</p>
 		</div>
 	);
 }

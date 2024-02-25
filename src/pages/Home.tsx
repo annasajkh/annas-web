@@ -25,8 +25,7 @@ export default function Home() {
 		<div className="pt-40">
 			<div className="flex justify-evenly flex-col items-center">
 				<img src={isMouseDown ? annasHappyImg : annasImg} className="rounded-lg" width={260} height={260} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}></img>
-
-				<p className="text-2xl font-mono mt-16 mb-40">Hello my name is Annas and i like to code and draw</p>
+				<p className="text-2xl font-mono flex justify-center items-center text-center mt-16 mb-40">Hello my name is Annas and i like to code and draw</p>
 			</div>
 
 			<div className="mx-auto flex justify-center flex-row items-center bg-gradient-to-r from-slate-900 via-slate-800 to-gray-800 mt-2 py-2">
