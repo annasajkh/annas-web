@@ -31,8 +31,8 @@ export default function Home() {
 			</div>
 
 			<div className="mx-auto flex justify-center flex-row items-center bg-gradient-to-r from-slate-900 via-slate-800 to-gray-800 mt-2 py-2">
-				<a href="https://twitter.com/AnnasVirtual" target="_blank" >
-					<img src={twitterXImg} width={48} height={48} className={socialMediaLinkStyle}></img>
+				<a href="https://twitter.com/AnnasVirtual" target="_blank" className={socialMediaLinkStyle}>
+					<img src={twitterXImg} width={48} height={48}></img>
 				</a>
 
 				<a href="https://www.youtube.com/channel/UCCUgLcJpWM0OOgxQCr32nYg" target="_blank" className={socialMediaLinkStyle}>

@@ -3,21 +3,21 @@ import itchIO from "../assets/projects/itch_io.png";
 import replit from "../assets/projects/replit.jpg";
 
 export default function Projects() {
-	const projectLinkStyle: string = "rounded-lg sm:mx-10 mx-5 scale-50 sm:scale-75";
+	const projectLinkStyle: string = "rounded-lg sm:mx-10 mx-5 scale-75 sm:scale-100";
 
 	return (
 		<div className="py-64">
 			<div className="mx-auto flex justify-center flex-row items-center bg-gradient-to-r from-slate-900 via-slate-800 to-gray-800 mt-2 py-2">
-				<a href="https://github.com/annasajkh" target="_blank">
-					<img src={github} className={projectLinkStyle} width={100} height={100}></img>
+				<a href="https://github.com/annasajkh" target="_blank" className={projectLinkStyle}>
+					<img src={github} width={100} height={100}></img>
 				</a>
 
-				<a href="https://annasjk.itch.io/" target="_blank">
-					<img src={itchIO} className={projectLinkStyle} width={100} height={100}></img>
+				<a href="https://annasjk.itch.io/" target="_blank" className={projectLinkStyle}>
+					<img src={itchIO} width={100} height={100}></img>
 				</a>
 
-				<a href="https://replit.com/@AnnasVirtual" target="_blank">
-					<img src={replit} className={projectLinkStyle} width={100} height={100}></img>
+				<a href="https://replit.com/@AnnasVirtual" target="_blank" className={projectLinkStyle}>
+					<img src={replit} width={100} height={100}></img>
 				</a>
 			</div>
 
