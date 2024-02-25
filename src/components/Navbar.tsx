@@ -9,7 +9,7 @@ export default function Navbar() {
             <header className="h-20 flex items-center justify-evenly md:sticky">
                 <Link to="/" className={linkStyle}>Home</Link>
                 <Link to="/projects" className={linkStyle}>Projects</Link>
-                <Link to="/something" className={linkStyle}>End</Link>
+                <Link to="/something" className={linkStyle}>Something</Link>
             </header>
         </div>
     )
