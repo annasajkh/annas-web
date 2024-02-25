@@ -3,7 +3,7 @@ import itchIO from "../assets/projects/itch_io.png";
 import replit from "../assets/projects/replit.jpg";
 
 export default function Projects() {
-	const projectLinkStyle: string = "rounded-lg sm:mx-10 mx-5 scale-75 sm:scale-100";
+	const projectLinkStyle: string = "rounded-lg sm:mx-10 sm:scale-100 mx-2 scale-75";
 
 	return (
 		<div className="py-64">

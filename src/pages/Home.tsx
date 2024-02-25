@@ -10,7 +10,7 @@ import tumblrImg from "../assets/social_media/tumblr.jpg";
 import linktreeImg from "../assets/social_media/linktree.png";
 
 export default function Home() {
-    const socialMediaLinkStyle = "rounded-lg sm:mx-10 mx-5 scale-75 sm:scale-100";
+    const socialMediaLinkStyle = "rounded-lg sm:mx-10 sm:scale-100 mx-2 scale-75";
 
     const [isMouseDown, setIsMouseDown] = useState(false);
 
