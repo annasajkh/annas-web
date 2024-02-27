@@ -49,10 +49,10 @@ class Point {
 const points: Array<Point> = [];
 const moveAwayFromMouseDistance: number = 100;
 
-let windowSize: Vector = new Vector(window.innerWidth, window.innerHeight);
+let windowSize: Vector = new Vector(window.screen.width, window.screen.height);
 
 for (let i = 0; i < 50; i++) {
-	const position: Vector = new Vector(Math.random() * window.innerWidth, Math.random() * window.innerHeight);
+	const position: Vector = new Vector(Math.random() * windowSize.x, Math.random() * windowSize.y);
 	const speed: number = Math.random() / 2 + 0.5;
 	const direction: Vector = new Vector(Math.random(), Math.random()).normalize();
 
@@ -62,7 +62,7 @@ function setup(p5: P5CanvasInstance) {
 	p5.createCanvas(windowSize.x, windowSize.y, p5.WEBGL);
 
 	window.addEventListener("resize", () => {
-		windowSize = new Vector(window.innerWidth, window.innerHeight);
+		windowSize = new Vector(window.screen.width, window.screen.height);
 		p5.resizeCanvas(windowSize.x, windowSize.y);
 	});
 }
