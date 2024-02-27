@@ -7,7 +7,7 @@ class Point {
 
 	public neighbors: Point[];
 
-	private static neighborDistance: number = 100;
+	private static neighborDistance: number = 200;
 
 	constructor(position: Vector, velocity: Vector) {
 		this.position = position;
