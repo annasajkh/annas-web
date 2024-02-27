@@ -51,7 +51,7 @@ const moveAwayFromMouseDistance: number = 100;
 
 let windowSize: Vector = new Vector(window.innerWidth, window.innerHeight);
 
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 50; i++) {
 	const position: Vector = new Vector(Math.random() * window.innerWidth, Math.random() * window.innerHeight);
 	const speed: number = Math.random() / 2 + 0.5;
 	const direction: Vector = new Vector(Math.random(), Math.random()).normalize();
