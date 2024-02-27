@@ -49,7 +49,6 @@ class Point {
 const points: Array<Point> = [];
 const moveAwayFromMouseDistance: number = 100;
 
-let onFocus: boolean = true;
 let windowSize: Vector = new Vector(window.innerWidth, window.innerHeight);
 
 for (let i = 0; i < 100; i++) {
@@ -59,15 +58,6 @@ for (let i = 0; i < 100; i++) {
 
 	points.push(new Point(position, new Vector(direction.x * speed * 0.1, direction.y * speed * 0.1)));
 }
-
-window.onfocus = () => {
-	onFocus = true;
-};
-
-window.onblur = () => {
-	onFocus = false;
-};
-
 function setup(p5: P5CanvasInstance) {
 	p5.createCanvas(windowSize.x, windowSize.y, p5.WEBGL);
 
@@ -124,10 +114,8 @@ export default function BackgroundSketch() {
 	const sketch: Sketch = (p5) => {
 		p5.setup = () => setup(p5);
 		p5.draw = () => {
-			if (onFocus) {
-				update(p5);
-				draw(p5);
-			}
+			update(p5);
+			draw(p5);
 		};
 	};
 
