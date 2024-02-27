@@ -4,11 +4,11 @@ import replit from "../assets/projects/replit.jpg";
 
 export default function Projects() {
 	const projectLinkStyle: string = "rounded-lg sm:mx-10 sm:scale-100 mx-2 scale-75";
-	const roundedAndStopScalingStyle = "rounded-lg min-w-8";
+	const roundedAndStopScalingStyle = "rounded-lg min-w-8 hover:scale-110";
 
 	return (
 		<div className="py-64">
-			<div className="mx-auto flex justify-center flex-row items-center bg-gradient-to-r from-slate-900 via-slate-800 to-gray-800 mt-2 py-2">
+			<div className="mx-auto flex justify-center flex-row items-center mt-2 py-2 transparent-bg">
 				<a href="https://github.com/annasajkh" target="_blank" className={projectLinkStyle}>
 					<img src={github} width={100} height={100} className={roundedAndStopScalingStyle}></img>
 				</a>

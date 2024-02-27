@@ -10,19 +10,20 @@ import tumblrImg from "../assets/social_media/tumblr.jpg";
 import linktreeImg from "../assets/social_media/linktree.png";
 
 export default function Home() {
-    const socialMediaLinkStyle = "sm:mx-10 sm:scale-100 mx-2 scale-75";
-    const roundedAndStopScalingStyle = "rounded-lg min-w-8";
+	const socialMediaLinkStyle = "sm:mx-10 sm:scale-100 mx-2 scale-75";
+	const roundedAndStopScalingStyle = "rounded-lg min-w-8";
 
-    const [isMouseDown, setIsMouseDown] = useState(false);
+	const socialMediaStyle = "rounded-lg min-w-8 hover:scale-110";
 
-    function onMouseEnter() {
-        setIsMouseDown(true);
-    }
+	const [isMouseDown, setIsMouseDown] = useState(false);
 
-    function onMouseLeave() {
-        setIsMouseDown(false);
-    }
-    
+	function onMouseEnter() {
+		setIsMouseDown(true);
+	}
+
+	function onMouseLeave() {
+		setIsMouseDown(false);
+	}
 
 	return (
 		<div className="pt-40">
@@ -31,27 +32,26 @@ export default function Home() {
 				<p className="text-2xl font-mono flex justify-center items-center text-center mt-16 mb-40">Hello my name is Annas and i like to code and draw</p>
 			</div>
 
-			<div className="mx-auto flex justify-center flex-row items-center bg-gradient-to-r from-slate-900 via-slate-800 to-gray-800 mt-2 py-2">
+			<div className="mx-auto flex justify-center flex-row items-center mt-2 py-2 transparent-bg">
 				<a href="https://twitter.com/AnnasVirtual" target="_blank" className={socialMediaLinkStyle}>
-					<img src={twitterXImg} width={48} height={48} className={roundedAndStopScalingStyle}></img>
+					<img src={twitterXImg} width={48} height={48} className={socialMediaStyle}></img>
 				</a>
 
 				<a href="https://www.youtube.com/channel/UCCUgLcJpWM0OOgxQCr32nYg" target="_blank" className={socialMediaLinkStyle}>
-					<img src={youtubeImg} width={48} height={48} className={roundedAndStopScalingStyle}></img>
+					<img src={youtubeImg} width={48} height={48} className={socialMediaStyle}></img>
 				</a>
 
 				<a href="https://www.instagram.com/annasvirtual/?hl=en" target="_blank" className={socialMediaLinkStyle}>
-					<img src={instagramImg} width={48} height={48} className={roundedAndStopScalingStyle}></img>
+					<img src={instagramImg} width={48} height={48} className={socialMediaStyle}></img>
 				</a>
 
-                <a href="https://www.tumblr.com/annasvirtual" target="_blank" className={socialMediaLinkStyle}>
-					<img src={tumblrImg} width={48} height={48} className={roundedAndStopScalingStyle}></img>
+				<a href="https://www.tumblr.com/annasvirtual" target="_blank" className={socialMediaLinkStyle}>
+					<img src={tumblrImg} width={48} height={48} className={socialMediaStyle}></img>
 				</a>
 
-                <a href="https://linktr.ee/AnnasVirtual" target="_blank" className={socialMediaLinkStyle}>
-					<img src={linktreeImg} width={48} height={48} className={roundedAndStopScalingStyle}></img>
+				<a href="https://linktr.ee/AnnasVirtual" target="_blank" className={socialMediaLinkStyle}>
+					<img src={linktreeImg} width={48} height={48} className={socialMediaStyle}></img>
 				</a>
-                
 			</div>
 		</div>
 	);
