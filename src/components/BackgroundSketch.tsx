@@ -49,7 +49,7 @@ class Point {
 const points: Array<Point> = [];
 const moveAwayFromMouseDistance: number = 100;
 
-let windowSize: Vector = new Vector(window.screen.width, window.screen.height);
+let windowSize: Vector = new Vector(window.innerWidth, window.innerHeight);
 
 for (let i = 0; i < 50; i++) {
 	const position: Vector = new Vector(Math.random() * windowSize.x, Math.random() * windowSize.y);
@@ -62,7 +62,7 @@ function setup(p5: P5CanvasInstance) {
 	p5.createCanvas(windowSize.x, windowSize.y, p5.WEBGL);
 
 	window.addEventListener("resize", () => {
-		windowSize = new Vector(window.screen.width, window.screen.height);
+		windowSize = new Vector(window.innerWidth, window.innerHeight);
 		p5.resizeCanvas(windowSize.x, windowSize.y);
 	});
 }
