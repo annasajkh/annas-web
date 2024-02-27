@@ -13,7 +13,7 @@ export default function Home() {
 	const socialMediaLinkStyle = "sm:mx-10 sm:scale-100 mx-2 scale-75";
 	const roundedAndStopScalingStyle = "rounded-lg min-w-8";
 
-	const socialMediaStyle = "rounded-lg min-w-8 hover:scale-120";
+	const socialMediaStyle = "rounded-lg min-w-8 hover:scale-110";
 
 	const [isMouseDown, setIsMouseDown] = useState(false);
 
