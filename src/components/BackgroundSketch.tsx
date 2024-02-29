@@ -46,7 +46,7 @@ class Point {
 	}
 }
 
-const points: Array<Point> = [];
+const points: Point[] = [];
 const moveAwayFromMouseDistance: number = 100;
 
 let windowSize: Vector = new Vector(window.innerWidth, window.innerHeight);
@@ -58,6 +58,7 @@ for (let i = 0; i < 50; i++) {
 
 	points.push(new Point(position, new Vector(direction.x * speed * 0.1, direction.y * speed * 0.1)));
 }
+
 function setup(p5: P5CanvasInstance) {
 	p5.createCanvas(windowSize.x, windowSize.y, p5.WEBGL);
 
