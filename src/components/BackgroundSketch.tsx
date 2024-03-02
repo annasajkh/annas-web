@@ -37,8 +37,6 @@ class Point {
 	}
 
 	draw(p5: P5CanvasInstance) {
-		p5.circle(this.position.x, this.position.y, 2);
-
 		for (const neighbor of this.neighbors) {
 			p5.stroke(255, 255, 255);
 			p5.line(this.position.x, this.position.y, neighbor.position.x, neighbor.position.y);
