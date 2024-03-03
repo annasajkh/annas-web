@@ -5,13 +5,10 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Something from "./pages/Something";
-import BackgroundSketch from "./components/BackgroundSketch";
 
 export default function App() {
 	return (
 		<>
-			<BackgroundSketch />
-
 			<HashRouter>
 				<Navbar />
 				

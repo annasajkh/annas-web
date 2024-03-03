@@ -6,7 +6,7 @@
 @layer base
 {
     html {
-        @apply text-white;
+        @apply text-white bg-gradient-to-r from-gray-900 via-slate-900 to-gray-900;
     }
 
     .transparent-bg {
