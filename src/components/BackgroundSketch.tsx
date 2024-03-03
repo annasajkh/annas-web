@@ -1,5 +1,5 @@
 import { P5CanvasInstance, ReactP5Wrapper, Sketch } from "@p5-wrapper/react";
-import { Vector } from "p5";
+import { Renderer, Vector } from "p5";
 
 class Point {
 	public position: Vector;
@@ -69,12 +69,15 @@ window.onblur = () => {
 }
 
 function setup(p5: P5CanvasInstance) {
-	p5.createCanvas(windowSize.x, windowSize.y, p5.WEBGL);
+	const canvas: Renderer = p5.createCanvas(windowSize.x, windowSize.y, p5.WEBGL);
 
 	window.addEventListener("resize", () => {
 		windowSize = new Vector(window.innerWidth, window.innerHeight);
 		p5.resizeCanvas(windowSize.x, windowSize.y);
 	});
+
+	canvas.position(0,0);
+	canvas.style("z-index", "-1");
 }
 
 function update(p5: P5CanvasInstance) {
